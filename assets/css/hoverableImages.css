@@ -1,0 +1,122 @@
+.elon{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(24, 24, 24)),
+     url(elon.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+    padding:3px;
+    position: relative;
+}
+
+.elon:hover{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(12, 12, 12)),
+     url(elon.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.steve{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(24, 24, 24)),
+     url(steve.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+    padding:3px;
+    position: relative;
+}
+
+.steve:hover{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(12, 12, 12)),
+     url(steve.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.mark{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(24, 24, 24)),
+     url(mark.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+    padding:3px;
+    position: relative;
+}
+
+.mark:hover{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(12, 12, 12)),
+     url(mark.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.jeff{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(24, 24, 24)),
+     url(jeff.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+    padding:3px;
+    position: relative;
+}
+
+.jeff:hover{
+    height:300px;
+    width:100%;
+    background:
+    linear-gradient(
+        transparent,rgb(12, 12, 12)),
+     url(jeff.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+
+.blockh1{
+    font-size:27px;
+    margin:auto;
+    color:white;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+

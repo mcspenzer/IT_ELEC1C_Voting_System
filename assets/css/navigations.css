@@ -1,0 +1,27 @@
+.navbar-words{
+    border-bottom:3px solid rgb(0, 0, 0);
+    font-size:16px;
+    color:white;
+}
+
+.navbar-words:hover{
+    border-bottom:3px solid white;
+    font-size:16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color:white;
+    background:linear-gradient(rgb(0, 0, 0),rgb(61, 61, 61));
+    padding:3px;
+}
+
+#loginLink{
+    color:rgb(48, 48, 48);
+}
+
+#loginLink:hover{
+    color:rgb(61, 61, 61)
+}
