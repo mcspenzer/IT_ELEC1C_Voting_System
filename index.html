@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VSystem_01</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+        <link rel="stylesheet" href="assets/css/Article-List.css">
+        <link rel="stylesheet" href="assets/css/Header-Dark.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/navigations.css">
+        <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    </head>
+<body>
+    <div>
+        <div class="header-dark" style="color:white;">
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-md-8 col-xl-12 offset-md-2 offset-xl-0">
+                        <div class="ui top stackable fixed menu" style="background-color:rgb(0, 0, 0);">
+                            <div class="ui container">
+                                <a class="active item navbar-words" href="index.html" style="color:white;">
+                                    <i class="home icon"></i> Home
+                                </a>
+                                <a class="item navbar-words" href="#" style="color:white;">
+                                    <i class="box icon"></i> Features
+                                </a>
+                                <div class="right menu ">
+                                    <a class="ui item navbar-words" href="signup.html" style="color:white;">
+                                        Sign up
+                                    </a>
+                                    <div class="ui inverted big menu">
+                                        <div class="ui simple dropdown item ">Login
+                                        <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="ui inverted big form">
+                                                    <div class="field">
+                                                        <div class="ui left icon inverted input">
+                                                            <i class="user icon"></i>
+                                                            <input type="text" name="user_name" placeholder="Enter username" id="user_name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="field">
+                                                        <div class="ui left icon inverted input">
+                                                            <i class="lock icon"></i>
+                                                            <input type="password" name="user_password" placeholder="Enter password" id="user_password">
+                                                        </div>
+                                                    </div>
+                                                    <a id="login_button">
+                                                        <div class="ui blue fluid submit button" >Login</div>
+                                                    </a> 
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="text-center" style="margin-top:100px">Welcome to VSystem</h1>
+                        <h2 class="text-center">Transparent, faultless and accurate elections</h2>
+                        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="article-list">
+        <div class="container">
+            <div class="intro"></div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item">
+                    <a href="#"><img class="img-fluid" src="assets/img/check.png"></a>
+                    <h3 class="name">Simplicity</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <a href="#" class="action">
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 item">
+                    <a href="#">
+                        <img class="img-fluid" src="assets/img/reli.png">
+                    </a>
+                    <h3 class="name">Reliability</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <a href="#" class="action">
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 item">
+                    <a href="#">
+                        <img class="img-fluid" src="assets/img/secu.png">
+                    </a>
+                    <h3 class="name">Security</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <a href="#" class="action">
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#login_button").click(function() {
+                var user_name = document.getElementById("user_name").value;
+                var user_password = document.getElementById("user_password").value;
+
+                var redirect_url = "includes/login/loginProcess.inc.php";
+                var form = $('<form action="' + redirect_url + '" method="POST">' +
+                '<input type="hidden" name="user_name_transfer" value="' + user_name + '">' + 
+                '<input type="hidden" name="user_password_transfer" value="' + user_password + '"> </form>');
+
+                $("body").append(form);
+                form.submit();
+            });
+        });
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
